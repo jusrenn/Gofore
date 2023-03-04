@@ -13,7 +13,7 @@ Test Teardown    Close Browser
 Almamedia TC01
     Menee Palvelut ja tuotteet sivuun
     Klikkaa ja menee Kotikokiin sivulle
-    Kirjoita Kotikokki-sivulla hakukenttään {} ja klikkaa hae-nappia.    makaroonilaatikko
+    Kirjoita Kotikokki-sivulla hakukenttään {ruoka} ja klikkaa hae-nappia.    makaroonilaatikko
     Valitse radionapeista ’Pastat ja nuudelit’ ja ’Makkara ja jauheliha’.
     Varmista, että saat hakutuloksia > 0 kpl
 
