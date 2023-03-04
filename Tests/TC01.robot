@@ -2,18 +2,16 @@
 Library    SeleniumLibrary
 
 Resource    ../Resources/Keywords/TestBase.robot
-Resource    ../Resources/Keywords/HomePage.robot
-Resource    ../Resources/Keywords/KaikkiPalvelutPage.robot
+Resource    ../Resources/Keywords/Almamedia.robot
 Resource    ../Resources/Keywords/KotiKokki.robot
 
 Test Setup    Setup
 Test Teardown    Close Browser
 
 *** Test Cases ***
-Almamedia TC01
-    Menee Palvelut ja tuotteet sivuun
-    Klikkaa ja menee Kotikokiin sivulle
-    Kirjoita Kotikokki-sivulla hakukenttään {ruoka} ja klikkaa hae-nappia.    makaroonilaatikko
+Gofore TC01
+    Navigoi sivulta edelleen Kotikokki-lehden sivulle kuvan kautta.
+    Kirjoita Kotikokki-sivulla hakukenttään makaroonilaatikko ja klikkaa hae-nappia.
     Valitse radionapeista ’Pastat ja nuudelit’ ja ’Makkara ja jauheliha’.
     Varmista, että saat hakutuloksia > 0 kpl
     Valitse yksi resepti ja lisää se ostoslistalle.

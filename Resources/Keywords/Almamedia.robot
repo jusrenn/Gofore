@@ -4,7 +4,11 @@ Library    SeleniumLibrary
 Variables    ../Locators/Locators.py
 
 *** Keywords ***
-Klikkaa ja menee Kotikokiin sivulle
+Navigoi sivulta edelleen Kotikokki-lehden sivulle kuvan kautta.
+    Sleep    1
+    Click Button    ${cookiesButton}
+    Click Link    ${palveluLink}
+    Click Link    ${tuotteetPalvelutLink}
     Set Focus To Element    ${kotikokkiLink}
     Sleep    1
     Click Link    ${kotikokkiLink}
