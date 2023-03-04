@@ -5,7 +5,7 @@ Library    String
 Variables    ../Locators/Locators.py
 
 *** Keywords ***
-Kirjoita Kotikokki-sivulla hakukenttään makaroonilaatikko ja klikkaa hae-nappia.
+Kirjoita Kotikokki-sivulla hakukenttään {} ja klikkaa hae-nappia.
     [Arguments]    ${ruoanNimi}
     ${status}    Run Keyword And Return Status    Element Should Be Visible    ${cookiesButtonKK}
     Run Keyword If    ${status}    Click Element    ${cookiesButtonKK}
