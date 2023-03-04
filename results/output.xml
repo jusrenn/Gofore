@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.0 on darwin)" generated="20230304 22:28:35.740" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.0 on darwin)" generated="20230304 23:28:02.184" rpa="false" schemaversion="3">
 <suite id="s1" name="GOFORE" source="/Users/yusufrenkoglu/Desktop/GOFORE">
 <suite id="s1-s1" name="Tests" source="/Users/yusufrenkoglu/Desktop/GOFORE/Tests">
 <suite id="s1-s1-s1" name="TC01" source="/Users/yusufrenkoglu/Desktop/GOFORE/Tests/TC01.robot">
@@ -9,83 +9,80 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230304 22:28:35.924" level="INFO">Opening browser 'chrome' to base url 'https://www.almamedia.fi'.</msg>
-<status status="PASS" starttime="20230304 22:28:35.924" endtime="20230304 22:28:40.563"/>
+<msg timestamp="20230304 23:28:02.362" level="INFO">Opening browser 'chrome' to base url 'https://www.almamedia.fi'.</msg>
+<status status="PASS" starttime="20230304 23:28:02.361" endtime="20230304 23:28:06.820"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230304 22:28:40.564" endtime="20230304 22:28:41.022"/>
+<status status="PASS" starttime="20230304 23:28:06.821" endtime="20230304 23:28:07.296"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:35.924" endtime="20230304 22:28:41.022"/>
+<status status="PASS" starttime="20230304 23:28:02.361" endtime="20230304 23:28:07.297"/>
 </kw>
 <kw name="Menee Palvelut ja tuotteet sivuun" library="HomePage">
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230304 22:28:42.024" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230304 22:28:41.023" endtime="20230304 22:28:42.025"/>
+<msg timestamp="20230304 23:28:08.298" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230304 23:28:07.298" endtime="20230304 23:28:08.299"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${cookiesButton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:42.026" level="INFO">Clicking button 'css=button#almacmp-modalConfirmBtn'.</msg>
-<status status="PASS" starttime="20230304 22:28:42.025" endtime="20230304 22:28:42.134"/>
+<msg timestamp="20230304 23:28:08.300" level="INFO">Clicking button 'css=button#almacmp-modalConfirmBtn'.</msg>
+<status status="PASS" starttime="20230304 23:28:08.299" endtime="20230304 23:28:08.392"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${palveluLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:42.135" level="INFO">Clicking link '(//a[@class='dropdown-toggle'])[3]'.</msg>
-<status status="PASS" starttime="20230304 22:28:42.134" endtime="20230304 22:28:42.188"/>
+<msg timestamp="20230304 23:28:08.393" level="INFO">Clicking link '(//a[@class='dropdown-toggle'])[3]'.</msg>
+<status status="PASS" starttime="20230304 23:28:08.392" endtime="20230304 23:28:08.451"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${tuotteetPalvelutLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:42.189" level="INFO">Clicking link 'Tuotteet ja palvelut'.</msg>
-<status status="PASS" starttime="20230304 22:28:42.188" endtime="20230304 22:28:42.879"/>
+<msg timestamp="20230304 23:28:08.452" level="INFO">Clicking link 'Tuotteet ja palvelut'.</msg>
+<status status="PASS" starttime="20230304 23:28:08.451" endtime="20230304 23:28:09.168"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:41.023" endtime="20230304 22:28:42.879"/>
+<status status="PASS" starttime="20230304 23:28:07.297" endtime="20230304 23:28:09.168"/>
 </kw>
 <kw name="Klikkaa ja menee Kotikokiin sivulle" library="KaikkiPalvelutPage">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0,600)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230304 22:28:42.881" level="INFO">Executing JavaScript:
-window.scrollTo(0,600)
-Without any arguments.</msg>
-<status status="PASS" starttime="20230304 22:28:42.880" endtime="20230304 22:28:42.905"/>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${kotikokkiLink}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230304 23:28:09.169" endtime="20230304 23:28:09.200"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230304 22:28:44.907" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230304 22:28:42.905" endtime="20230304 22:28:44.907"/>
+<msg timestamp="20230304 23:28:10.201" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230304 23:28:09.200" endtime="20230304 23:28:10.201"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${kotikokkiLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:44.908" level="INFO">Clicking link 'xpath=(//div[@class='alma-consumer palvelut-kuluttajille business-area-result col-md-3']/a)[4]'.</msg>
-<status status="PASS" starttime="20230304 22:28:44.908" endtime="20230304 22:28:44.982"/>
+<msg timestamp="20230304 23:28:10.202" level="INFO">Clicking link 'xpath=(//div[@class='alma-consumer palvelut-kuluttajille business-area-result col-md-3']/a)[4]'.</msg>
+<status status="PASS" starttime="20230304 23:28:10.201" endtime="20230304 23:28:10.273"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230304 22:28:46.983" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230304 22:28:44.982" endtime="20230304 22:28:46.984"/>
+<msg timestamp="20230304 23:28:12.274" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230304 23:28:10.273" endtime="20230304 23:28:12.274"/>
 </kw>
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${wh}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20230304 22:28:46.994" level="INFO">${wh} = ['CDwindow-87EB53237FE7652A3884EE5BDA69E1B7', 'CDwindow-C65EFE0E486B44C1CD1F32E4DF7D48BE']</msg>
-<status status="PASS" starttime="20230304 22:28:46.984" endtime="20230304 22:28:46.995"/>
+<msg timestamp="20230304 23:28:12.339" level="INFO">${wh} = ['CDwindow-19B94F0AD80BE2247A1D43D8501BEAB3', 'CDwindow-A1AE6CF8C81CAB8129D461B578B6B402']</msg>
+<status status="PASS" starttime="20230304 23:28:12.275" endtime="20230304 23:28:12.339"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${wh}[1]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230304 22:28:46.995" endtime="20230304 22:28:47.071"/>
+<status status="PASS" starttime="20230304 23:28:12.339" endtime="20230304 23:28:12.460"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:42.879" endtime="20230304 22:28:47.071"/>
+<status status="PASS" starttime="20230304 23:28:09.169" endtime="20230304 23:28:12.461"/>
 </kw>
-<kw name="Kirjoita Kotikokki-sivulla hakukenttään {ruoka} ja klikkaa hae-nappia." library="KK_HomePage">
+<kw name="Kirjoita Kotikokki-sivulla hakukenttään {ruoka} ja klikkaa hae-nappia." library="KotiKokki">
 <arg>makaroonilaatikko</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${status}</var>
@@ -95,92 +92,370 @@ Without any arguments.</msg>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${cookiesButtonKK}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230304 22:28:47.818" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230304 22:28:47.819" level="FAIL">Element with locator 'css=button#almacmp-modalConfirmBtn' not found.</msg>
-<status status="FAIL" starttime="20230304 22:28:47.072" endtime="20230304 22:28:47.822"/>
+<msg timestamp="20230304 23:28:15.537" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230304 23:28:15.538" level="FAIL">Element with locator 'css=button#almacmp-modalConfirmBtn' not found.</msg>
+<status status="FAIL" starttime="20230304 23:28:12.463" endtime="20230304 23:28:15.541"/>
 </kw>
-<msg timestamp="20230304 22:28:47.823" level="INFO">${status} = False</msg>
-<status status="PASS" starttime="20230304 22:28:47.072" endtime="20230304 22:28:47.823"/>
+<msg timestamp="20230304 23:28:15.541" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20230304 23:28:12.462" endtime="20230304 23:28:15.541"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${status}</arg>
-<arg>Click Button</arg>
+<arg>Click Element</arg>
 <arg>${cookiesButtonKK}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20230304 22:28:47.823" endtime="20230304 22:28:47.823"/>
+<status status="PASS" starttime="20230304 23:28:15.542" endtime="20230304 23:28:15.542"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${searchBoxInput}</arg>
 <arg>${ruoanNimi}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:47.825" level="INFO">Typing text 'makaroonilaatikko' into text field 'xpath=(//input[@name='freeText'])[1]'.</msg>
-<status status="PASS" starttime="20230304 22:28:47.824" endtime="20230304 22:28:48.104"/>
+<msg timestamp="20230304 23:28:15.543" level="INFO">Typing text 'makaroonilaatikko' into text field 'xpath=(//input[@name='freeText'])[1]'.</msg>
+<status status="PASS" starttime="20230304 23:28:15.543" endtime="20230304 23:28:15.831"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${haeButton}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:48.105" level="INFO">Clicking link 'css=a#recipe-search-free-text-submit'.</msg>
-<status status="PASS" starttime="20230304 22:28:48.104" endtime="20230304 22:28:48.821"/>
+<msg timestamp="20230304 23:28:15.831" level="INFO">Clicking link 'css=a#recipe-search-free-text-submit'.</msg>
+<status status="PASS" starttime="20230304 23:28:15.831" endtime="20230304 23:28:16.815"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:47.072" endtime="20230304 22:28:48.822"/>
+<status status="PASS" starttime="20230304 23:28:12.461" endtime="20230304 23:28:16.815"/>
 </kw>
-<kw name="Valitse radionapeista ’Pastat ja nuudelit’ ja ’Makkara ja jauheliha’." library="KK_HomePage">
+<kw name="Valitse radionapeista ’Pastat ja nuudelit’ ja ’Makkara ja jauheliha’." library="KotiKokki">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${pastatJaNuudelit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:48.823" level="INFO">Clicking element 'css=form&gt;fieldset&gt;label:nth-child(6)'.</msg>
-<status status="PASS" starttime="20230304 22:28:48.822" endtime="20230304 22:28:48.953"/>
+<msg timestamp="20230304 23:28:16.816" level="INFO">Clicking element 'css=form&gt;fieldset&gt;label:nth-child(6)'.</msg>
+<status status="PASS" starttime="20230304 23:28:16.816" endtime="20230304 23:28:16.970"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${makkaraJaJauheliha}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:48.954" level="INFO">Clicking element 'xpath=(//form/fieldset)[4]/label[4]'.</msg>
-<status status="PASS" starttime="20230304 22:28:48.954" endtime="20230304 22:28:49.024"/>
+<msg timestamp="20230304 23:28:16.971" level="INFO">Clicking element 'xpath=(//form/fieldset)[4]/label[4]'.</msg>
+<status status="PASS" starttime="20230304 23:28:16.970" endtime="20230304 23:28:17.078"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:48.822" endtime="20230304 22:28:49.025"/>
+<status status="PASS" starttime="20230304 23:28:16.815" endtime="20230304 23:28:17.078"/>
 </kw>
-<kw name="Varmista, että saat hakutuloksia &gt; 0 kpl" library="KK_HomePage">
+<kw name="Varmista, että saat hakutuloksia &gt; 0 kpl" library="KotiKokki">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${resultText}</var>
 <arg>${result}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230304 22:28:49.070" level="INFO">${resultText} = Hakuehdoillasi löytyi 14 reseptiä</msg>
-<status status="PASS" starttime="20230304 22:28:49.026" endtime="20230304 22:28:49.070"/>
+<msg timestamp="20230304 23:28:17.119" level="INFO">${resultText} = Hakuehdoillasi löytyi 14 reseptiä</msg>
+<status status="PASS" starttime="20230304 23:28:17.079" endtime="20230304 23:28:17.120"/>
 </kw>
 <kw name="Split String" library="String">
 <var>${resultSplit}</var>
 <arg>${resultText}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20230304 22:28:49.071" level="INFO">${resultSplit} = ['Hakuehdoillasi', 'löytyi', '14', 'reseptiä']</msg>
-<status status="PASS" starttime="20230304 22:28:49.070" endtime="20230304 22:28:49.071"/>
+<msg timestamp="20230304 23:28:17.121" level="INFO">${resultSplit} = ['Hakuehdoillasi', 'löytyi', '14', 'reseptiä']</msg>
+<status status="PASS" starttime="20230304 23:28:17.120" endtime="20230304 23:28:17.121"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${resultSplit}[2]&gt;0</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20230304 22:28:49.071" endtime="20230304 22:28:49.071"/>
+<status status="PASS" starttime="20230304 23:28:17.121" endtime="20230304 23:28:17.122"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230304 22:28:52.073" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230304 22:28:49.071" endtime="20230304 22:28:52.073"/>
+<msg timestamp="20230304 23:28:20.123" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230304 23:28:17.122" endtime="20230304 23:28:20.123"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:49.025" endtime="20230304 22:28:52.073"/>
+<status status="PASS" starttime="20230304 23:28:17.078" endtime="20230304 23:28:20.124"/>
+</kw>
+<kw name="Valitse yksi resepti ja lisää se ostoslistalle." library="KotiKokki">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${ensimmainenResepti}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:20.125" level="INFO">Clicking link 'xpath=(//a[@class='recipe-grid-item__img-container'])[1]'.</msg>
+<status status="PASS" starttime="20230304 23:28:20.124" endtime="20230304 23:28:21.514"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230304 23:28:22.515" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230304 23:28:21.514" endtime="20230304 23:28:22.516"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${ostoslistaLink}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:22.516" level="INFO">Clicking link 'xpath=//a[@data-view-recipe-id='798544']'.</msg>
+<status status="PASS" starttime="20230304 23:28:22.516" endtime="20230304 23:28:23.248"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230304 23:28:24.249" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230304 23:28:23.248" endtime="20230304 23:28:24.249"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:20.124" endtime="20230304 23:28:24.250"/>
+</kw>
+<kw name="Avaa ostoslista, lue ainekset listalta ja lokita konsolille." library="KotiKokki">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${ostoslista}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:24.251" level="INFO">Clicking link 'css=a.shoppinglist-toggle'.</msg>
+<status status="PASS" starttime="20230304 23:28:24.251" endtime="20230304 23:28:24.305"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230304 23:28:26.311" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230304 23:28:24.305" endtime="20230304 23:28:26.311"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${aineksetList}</var>
+<arg>${reseptiList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.377" level="INFO">${aineksetList} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="252e9483-4f36-4903-99b5-a136d44abd88")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20230304 23:28:26.312" endtime="20230304 23:28:26.378"/>
+</kw>
+<for flavor="IN">
+<var>${e}</var>
+<value>@{aineksetList}</value>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="252e9483-4f36-4903-99b5-a136d44abd88")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.425" level="INFO">${text} = täysjyvämakaronia</msg>
+<status status="PASS" starttime="20230304 23:28:26.378" endtime="20230304 23:28:26.426"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.426" endtime="20230304 23:28:26.426"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.378" endtime="20230304 23:28:26.426"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="dd9e9115-725e-417c-91e3-138e6f2eeb27")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.485" level="INFO">${text} = sikanautajauhelihaa</msg>
+<status status="PASS" starttime="20230304 23:28:26.427" endtime="20230304 23:28:26.486"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.486" endtime="20230304 23:28:26.486"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.427" endtime="20230304 23:28:26.486"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="a40a27b9-c89b-4511-bf96-cb23f1941e85")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.531" level="INFO">${text} = (puna)sipulia</msg>
+<status status="PASS" starttime="20230304 23:28:26.487" endtime="20230304 23:28:26.532"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.532" endtime="20230304 23:28:26.533"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.486" endtime="20230304 23:28:26.533"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="be667588-2af0-4009-a2ef-db4cae0e0499")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.544" level="INFO">${text} = suolaa</msg>
+<status status="PASS" starttime="20230304 23:28:26.533" endtime="20230304 23:28:26.544"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.545" endtime="20230304 23:28:26.546"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.533" endtime="20230304 23:28:26.547"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="5971ecf1-c404-42ea-8b64-8e5e9089e1d7")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.558" level="INFO">${text} = valkopippuria</msg>
+<status status="PASS" starttime="20230304 23:28:26.547" endtime="20230304 23:28:26.558"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.559" endtime="20230304 23:28:26.559"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.547" endtime="20230304 23:28:26.560"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="4464f36b-c645-424f-81d0-902975511785")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.572" level="INFO">${text} = paprikajauhetta</msg>
+<status status="PASS" starttime="20230304 23:28:26.560" endtime="20230304 23:28:26.572"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.573" endtime="20230304 23:28:26.574"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.560" endtime="20230304 23:28:26.574"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="7e97b8db-a395-4845-8113-6f28e97831c8")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.586" level="INFO">${text} = kananmunaa</msg>
+<status status="PASS" starttime="20230304 23:28:26.574" endtime="20230304 23:28:26.586"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.587" endtime="20230304 23:28:26.587"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.574" endtime="20230304 23:28:26.587"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="63045faf-adc8-4f58-8337-d18482895022")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.599" level="INFO">${text} = Ruskea kastike</msg>
+<status status="PASS" starttime="20230304 23:28:26.588" endtime="20230304 23:28:26.600"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.600" endtime="20230304 23:28:26.601"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.588" endtime="20230304 23:28:26.601"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="756e08c1-c2a7-4b7f-8e9e-033e263252c2")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.613" level="INFO">${text} = voita</msg>
+<status status="PASS" starttime="20230304 23:28:26.601" endtime="20230304 23:28:26.614"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.614" endtime="20230304 23:28:26.615"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.601" endtime="20230304 23:28:26.615"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="a2d38597-716c-4ac3-a1d3-7ae1d6ddf98c")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.626" level="INFO">${text} = (täysjyvä)vehnäjauhoja</msg>
+<status status="PASS" starttime="20230304 23:28:26.616" endtime="20230304 23:28:26.626"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.627" endtime="20230304 23:28:26.627"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.615" endtime="20230304 23:28:26.628"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="876f280d-3480-47e7-bcfd-8a58666646ff")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.640" level="INFO">${text} = lihalientä</msg>
+<status status="PASS" starttime="20230304 23:28:26.628" endtime="20230304 23:28:26.640"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.640" endtime="20230304 23:28:26.641"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.628" endtime="20230304 23:28:26.641"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="e8bf2e50-d54d-424b-a611-8ca35007a813")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.653" level="INFO">${text} = soijakastiketta</msg>
+<status status="PASS" starttime="20230304 23:28:26.642" endtime="20230304 23:28:26.654"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.654" endtime="20230304 23:28:26.654"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.641" endtime="20230304 23:28:26.654"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="bc99de9e-1391-4e8e-8816-c985525133a1")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.666" level="INFO">${text} = mustapippuria</msg>
+<status status="PASS" starttime="20230304 23:28:26.655" endtime="20230304 23:28:26.666"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.667" endtime="20230304 23:28:26.667"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.654" endtime="20230304 23:28:26.667"/>
+</iter>
+<iter>
+<var name="${e}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a98599492eb5f7d0d80868b617883aa3", element="fdd571f7-922e-4f06-8e5b-9b99a4881903")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>${e}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230304 23:28:26.679" level="INFO">${text} = ketsuppia</msg>
+<status status="PASS" starttime="20230304 23:28:26.668" endtime="20230304 23:28:26.679"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230304 23:28:26.679" endtime="20230304 23:28:26.680"/>
+</kw>
+<status status="PASS" starttime="20230304 23:28:26.668" endtime="20230304 23:28:26.680"/>
+</iter>
+<status status="PASS" starttime="20230304 23:28:26.378" endtime="20230304 23:28:26.680"/>
+</for>
+<status status="PASS" starttime="20230304 23:28:24.250" endtime="20230304 23:28:26.681"/>
 </kw>
 <kw name="Close Browser" library="TestBase" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230304 22:28:52.075" endtime="20230304 22:28:52.209"/>
+<status status="PASS" starttime="20230304 23:28:26.682" endtime="20230304 23:28:26.916"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:52.074" endtime="20230304 22:28:52.209"/>
+<status status="PASS" starttime="20230304 23:28:26.681" endtime="20230304 23:28:26.916"/>
 </kw>
-<status status="PASS" starttime="20230304 22:28:35.922" endtime="20230304 22:28:52.209"/>
+<status status="PASS" starttime="20230304 23:28:02.360" endtime="20230304 23:28:26.916"/>
 </test>
-<status status="PASS" starttime="20230304 22:28:35.769" endtime="20230304 22:28:52.210"/>
+<status status="PASS" starttime="20230304 23:28:02.216" endtime="20230304 23:28:26.917"/>
 </suite>
-<status status="PASS" starttime="20230304 22:28:35.766" endtime="20230304 22:28:52.212"/>
+<status status="PASS" starttime="20230304 23:28:02.214" endtime="20230304 23:28:26.919"/>
 </suite>
-<status status="PASS" starttime="20230304 22:28:35.745" endtime="20230304 22:28:52.214"/>
+<status status="PASS" starttime="20230304 23:28:02.194" endtime="20230304 23:28:26.921"/>
 </suite>
 <statistics>
 <total>

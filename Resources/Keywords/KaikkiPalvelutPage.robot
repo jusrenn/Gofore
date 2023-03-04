@@ -5,8 +5,8 @@ Variables    ../Locators/Locators.py
 
 *** Keywords ***
 Klikkaa ja menee Kotikokiin sivulle
-    Execute Javascript    window.scrollTo(0,400)
-    Sleep    2
+    Set Focus To Element    ${kotikokkiLink}
+    Sleep    1
     Click Link    ${kotikokkiLink}
     Sleep    2
     ${wh}    Get Window Handles

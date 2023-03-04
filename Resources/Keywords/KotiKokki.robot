@@ -8,7 +8,7 @@ Variables    ../Locators/Locators.py
 Kirjoita Kotikokki-sivulla hakukenttään {ruoka} ja klikkaa hae-nappia.
     [Arguments]    ${ruoanNimi}
     ${status}    Run Keyword And Return Status    Element Should Be Visible    ${cookiesButtonKK}
-    Run Keyword If    ${status}    Click Button    ${cookiesButtonKK}
+    Run Keyword If    ${status}    Click Element    ${cookiesButtonKK}
     Input Text    ${searchBoxInput}    ${ruoanNimi}
     Click Link    ${haeButton}
 
@@ -21,3 +21,18 @@ Varmista, että saat hakutuloksia > 0 kpl
     ${resultSplit}    Split String    ${resultText}
     Should Be True    ${resultSplit}[2]>0
     Sleep    3
+
+Valitse yksi resepti ja lisää se ostoslistalle.
+    Click Link    ${ensimmainenResepti}
+    Sleep    1
+    Click Link    ${ostoslistaLink}
+    Sleep    1
+
+Avaa ostoslista, lue ainekset listalta ja lokita konsolille.
+    Click Link    ${ostoslista}
+    Sleep    2
+    ${aineksetList}    Get WebElements    ${reseptiList}
+    FOR  ${e}  IN  @{aineksetList}
+        ${text}    Get Text    ${e}
+        Log To Console    ${text}
+    END
